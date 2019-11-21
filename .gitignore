@@ -1,0 +1,7 @@
+.idea/
+.cache/
+
+vendor/
+node_modules/
+
+config/database.php

@@ -1,0 +1,22 @@
+{
+    "name": "leequixxx/inter-tree",
+    "description": "Test project for interviewer",
+    "type": "project",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Misha Vorobeychikov",
+            "email": "mail@leequixxx.space"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "duncan3dc/blade": "^4.8.0",
+        "doctrine/orm": "^2.7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "InterTree\\": "src"
+        }
+    }
+}

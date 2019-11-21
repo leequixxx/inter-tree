@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
+                          https://www.doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+    <entity name="InterTree\Entities\Category" table="categories">
+        <unique-constraints>
+            <unique-constraint columns="name" />
+        </unique-constraints>
+        
+        <id name="id" type="integer">
+            <generator />
+        </id>
+        <field name="name" />
+
+        <many-to-one target-entity="Category" field="parent" inversed-by="children">
+            <join-column name="parent_id" on-delete="CASCADE" on-update="CASCADE" />
+        </many-to-one>
+        <one-to-many target-entity="Category" field="children" mapped-by="parent">
+            <cascade>
+                <cascade-persist />
+            </cascade>
+        </one-to-many>
+    </entity>
+</doctrine-mapping>

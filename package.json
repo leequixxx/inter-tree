@@ -1,0 +1,23 @@
+{
+  "name": "inter-tree",
+  "version": "1.0.0",
+  "description": "Test project for interviewer",
+  "main": "webpack.config.js",
+  "scripts": {
+    "build:dev": "webpack-cli --watch",
+    "build:prod": "cross-env NODE_ENV=production webpack-cli",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Misha Vorobeychikov <mail@leequixxx.space>",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "cross-env": "^6.0.3",
+    "css-loader": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.13.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "sass-loader": "^8.0.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
+}

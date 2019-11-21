@@ -1,0 +1,10 @@
+<?php
+
+// Rename that file to database.php
+
+return [
+    'driver' => 'pdo_mysql',
+    'user' => 'Your username',
+    'password' => 'Your password',
+    'dbname' => 'Your DB name',
+];
